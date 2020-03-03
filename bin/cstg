@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "prawn"
+require "rmagick"
+
+$LOAD_PATH.unshift(File.expand_path(File.join(__dir__, "..", "lib")))
+require "cstg/application"
+
+CSTG::Application.call(ARGV)
+
